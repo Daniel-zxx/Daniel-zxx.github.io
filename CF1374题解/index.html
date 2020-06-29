@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>CF1374题解</title>
+	</head>
+	<body>
+		<h1>CF1374题解<h1>
+		<h2>A<h2>
+		<h4><a href="https://codeforces.ml/contest/1374/problem/A">链接</a><h3>
+		<h3>题面描述<h3>
+		<h4>给出x，y，n，找出最大的k满足：0≤k≤n，k%x=y。<h4>
+		<h3>分析<h3>
+		<h4>首先，我们明确：如果k%x=y，那么(k-y)%x=0。即k=x*a+y。y已确定，所以k≤n-y，又得满足k被x整除，a的最大值是(n-y)/x向下取整，k的最大值就是[(n-y)/x]*x+y。<h4>
+		<h3><a href="https://daniel-zxx.github.io">回主页</a><h3>
+	</body>
+</html>
