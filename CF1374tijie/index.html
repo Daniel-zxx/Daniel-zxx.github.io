@@ -4,12 +4,26 @@
 	</head>
 	<body>
 		<h1>CF1374题解<h1>
+		<hr>
 		<h2>A<h2>
-		<h4><a href="https://codeforces.ml/contest/1374/problem/A">链接</a><h3>
+		<h4><a href="https://codeforces.ml/contest/1374/problem/A">链接</a><h4>
 		<h3>题面描述<h3>
 		<h4>给出x，y，n，找出最大的k满足：0≤k≤n，k%x=y。<h4>
 		<h3>分析<h3>
-		<h4>首先，我们明确：如果k%x=y，那么(k-y)%x=0。即k=x*a+y。y已确定，所以k≤n-y，又得满足k被x整除，a的最大值是(n-y)/x向下取整，k的最大值就是[(n-y)/x]*x+y。<h4>
-		<h3><a href="https://daniel-zxx.github.io">回主页</a><h3>
+		<h4>首先，我们明确：如果k%x=y，那么(k-y)%x=0。即k=x*a+y。<h4>
+		<h4>y已确定，所以k≤n-y，又得满足k被x整除，a的最大值是(n-y)/x向下取整，k的最大值就是[(n-y)/x]*x+y。<h4>
+		<hr>
+		<h2>B<h2>
+		<h4><a href="https://codeforces.ml/contest/1374/problem/B">链接</a><h4>
+		<h3>题面描述<h3>
+		<h4>给你n，请你将n乘2或除6，请问你至少要多少次才可以将n变成1。若可以，输出至少多少次，若不行，输出-1。<h4>
+		<h3>分析<h3>
+		<h4>首先，假设我们乘a个2，除b个6，那么n=b*6/max(a*2,1)。<h4>
+		<h4>所以，我们可以分析出若不满足以下两个条件，输出-1：<h4>
+		<h4>1）n必须只有3或2两个因子。<h4>
+		<h4>2）因为哪怕a=0，n的2因子数也不会大于3的因子数。<h4>
+		<h4>满足两个条件的情况下，输出3因子数（b次操作）+3的因子数-2的因子数（a次操作）。<h4>
+		<hr>
+		<>回主页</a><h3>
 	</body>
 </html>
